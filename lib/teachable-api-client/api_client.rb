@@ -7,26 +7,27 @@ module TeachableApiClient
     BASE_ROUTE = 'http://todoable.teachable.tech/api/'
 
     attr_accessor :username, :password, :token
-    def initialize(username, password)
+    def initialize(username, password, skip_auth = false)
       @username = username
       @password = password
-      authenticate
+      authenticate unless skip_auth
     end
 
-    private
-
     def authenticate
-      response = RestClient::Request.execute(
+      request = RestClient::Request.new(
         method: :post,
         url: "#{BASE_ROUTE}authenticate",
         user: username,
-        password: password
+        password: password,
+        headers: {
+          content_type: :json,
+          accept: :json
+        }
       )
+      response = request.execute
       # TODO: maybe keep track of expires_at
       @token = response['token']
-    rescue RestClient::Unauthorized => e
-      # TODO: figure out what to do with exceptions
-      puts '401 - Authentication failed', e.message
+      response
     end
   end
 end

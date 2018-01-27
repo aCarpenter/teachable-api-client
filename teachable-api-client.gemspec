@@ -13,5 +13,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rest-client', '~> 2.0'
 
   s.add_development_dependency 'rspec', '~> 3.7'
-  s.add_development_dependency 'rubocop', '~> 0.52.1'
+  s.add_development_dependency 'rubocop', '~> 0.52'
+  s.add_development_dependency 'vcr', '~> 4.0'
 end
