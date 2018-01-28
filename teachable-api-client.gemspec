@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'teachable-api-client'
-  s.version = '0.0.1'
-  s.license = 'GPL-3.0'
+  s.version = '0.0.2'
+  s.license = 'LGPL-3.0+'
   s.author = 'Alexander Carpenter'
   s.email = 'alexander.h.carpenter@gmail.com'
   s.summary = 'Simple Gem to containing a client to interact with Teachable\'s Todoable API'
