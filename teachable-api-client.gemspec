@@ -1,7 +1,7 @@
 require 'rake'
 Gem::Specification.new do |s|
   s.name = 'teachable-api-client'
-  s.version = '0.0.2'
+  s.version = '1.0.0'
   s.license = 'LGPL-3.0+'
   s.author = 'Alexander Carpenter'
   s.email = 'alexander.h.carpenter@gmail.com'
