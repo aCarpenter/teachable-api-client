@@ -2,9 +2,12 @@
 Client to interact with Teachable's Todoable API
 
 ## Installation
-Until this gem is published to RubyGems, you will need to install this gem from a local `.gem` file.
-
-### Building Gem From Source
+### Option 1: Using Bundler
+Add the following entry to your `Gemfile`
+```
+gem 'teachable-api-client', git: 'https://github.com/aCarpenter/teachable-api-client.git'
+```
+### Option 2: Building from source
 You can `git clone` or download the source from this repository. Once downloaded, navigate to the directory and build the gem as follows:
 
 (from within teachable-api-client)
@@ -12,13 +15,6 @@ You can `git clone` or download the source from this repository. Once downloaded
 
 You may link to the resulting `.gem` file to use it in your projects.
 
-## Adding teachable-api-client as a dependency
-### Using Bundler
-Add the following entry to your `Gemfile`
-```
-gem 'teachable-api-client', git: 'https://github.com/aCarpenter/teachable-api-client.git'
-```
-### Without Bundler
 Require `api_client.rb`, adjusting the path to match the location of your gem file:
 ```
 require 'path/to/teachable-api-client/lib/teachable-api-client/api_client'
