@@ -1,0 +1,148 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"list 1"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="my-api-token"
+      Content-Length:
+      - '26'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 29 Jan 2018 03:21:51 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/b7faac15-f221-4e09-8646-0e125fd0d028
+      Content-Length:
+      - '147'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"list 1","src":"http://todoable.teachable.tech/api/lists/b7faac15-f221-4e09-8646-0e125fd0d028","id":"b7faac15-f221-4e09-8646-0e125fd0d028"}'
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 03:21:51 GMT
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"list 2"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="my-api-token"
+      Content-Length:
+      - '26'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 29 Jan 2018 03:21:50 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/d436923f-764a-4131-942d-c91214148130
+      Content-Length:
+      - '147'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"list 2","src":"http://todoable.teachable.tech/api/lists/d436923f-764a-4131-942d-c91214148130","id":"d436923f-764a-4131-942d-c91214148130"}'
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 03:21:51 GMT
+- request:
+    method: get
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="my-api-token"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 29 Jan 2018 03:21:50 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '456'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"lists":[{"name":"my list","src":"http://todoable.teachable.tech/api/lists/3f1261f6-09f1-4689-b935-30c48517bb23","id":"3f1261f6-09f1-4689-b935-30c48517bb23"},{"name":"list
+        1","src":"http://todoable.teachable.tech/api/lists/b7faac15-f221-4e09-8646-0e125fd0d028","id":"b7faac15-f221-4e09-8646-0e125fd0d028"},{"name":"list
+        2","src":"http://todoable.teachable.tech/api/lists/d436923f-764a-4131-942d-c91214148130","id":"d436923f-764a-4131-942d-c91214148130"}]}'
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 03:21:51 GMT
+recorded_with: VCR 4.0.0

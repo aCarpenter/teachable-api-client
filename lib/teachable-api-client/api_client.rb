@@ -18,10 +18,11 @@ module TeachableApiClient
       client
     end
 
-    def initialize(username, password, skip_auth = false)
-      @username = username
-      @password = password
-      authenticate unless skip_auth
+    def self.from_credentials(username, password, skip_auth = false)
+      client = new
+      client.username = username
+      client.password = password
+      client.authenticate unless skip_auth
     end
 
     def lists

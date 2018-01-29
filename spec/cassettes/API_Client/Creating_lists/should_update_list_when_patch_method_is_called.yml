@@ -1,0 +1,157 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://todoable.teachable.tech/api/lists
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"list 3"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="my-api-token"
+      Content-Length:
+      - '26'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 29 Jan 2018 03:21:51 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Location:
+      - http://todoable.teachable.tech/api/lists/5d777fa3-ecd5-48fc-ad4f-a330a4207b25
+      Content-Length:
+      - '147'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"list 3","src":"http://todoable.teachable.tech/api/lists/5d777fa3-ecd5-48fc-ad4f-a330a4207b25","id":"5d777fa3-ecd5-48fc-ad4f-a330a4207b25"}'
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 03:21:51 GMT
+- request:
+    method: patch
+    uri: http://todoable.teachable.tech/api/lists/5d777fa3-ecd5-48fc-ad4f-a330a4207b25
+    body:
+      encoding: UTF-8
+      string: '{"list":{"name":"my new list!"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="my-api-token"
+      Content-Length:
+      - '32'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 29 Jan 2018 03:21:51 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '20'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: my new list! updated
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 03:21:51 GMT
+- request:
+    method: get
+    uri: http://todoable.teachable.tech/api/lists/5d777fa3-ecd5-48fc-ad4f-a330a4207b25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token="my-api-token"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 29 Jan 2018 03:21:51 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '4579'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"name":"my new list!","items":[{"name":"this be an item","finished_at":"2018-01-28T23:46:22.604Z","src":"http://todoable.teachable.tech/api/lists/5eb08e73-0c96-4295-9e8a-5307240c3b62/items/245d4e49-c2be-4e3f-86de-b9412b1fed98","id":"245d4e49-c2be-4e3f-86de-b9412b1fed98"},{"name":"this
+        be an item","finished_at":"2018-01-28T23:46:22.684Z","src":"http://todoable.teachable.tech/api/lists/05a397d1-5868-440f-aa53-83efbed342a2/items/dac756eb-48cd-4299-8245-7db8e901973c","id":"dac756eb-48cd-4299-8245-7db8e901973c"},{"name":"Feed
+        the cat","finished_at":"2018-01-28T23:46:22.766Z","src":"http://todoable.teachable.tech/api/lists/5f2e9c83-85d5-48c4-b4c5-5b2e977fa12c/items/0dbcb90a-5a80-445c-bf82-e0a36feff425","id":"0dbcb90a-5a80-445c-bf82-e0a36feff425"},{"name":"Feed
+        the cat","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b140aab-7d5e-40b9-b4a4-26c61b419f45/items/55d98eae-b073-4dd0-afc1-e043dc93b554","id":"55d98eae-b073-4dd0-afc1-e043dc93b554"},{"name":"Get
+        some milk","finished_at":"2018-01-21T18:14:53.860Z","src":"http://todoable.teachable.tech/api/lists/5f7d0ef8-fade-41b4-a2c5-2c0c5af1c706/items/7117e69f-af67-40df-b228-20dbdada8067","id":"7117e69f-af67-40df-b228-20dbdada8067"},{"name":"QA1de3522c-c580-4b93-ad7a-b2949fde64b5","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b2a6c2c-c6cc-4a53-b5d8-1a54c78ec44d/items/97460330-726a-4bf6-b43c-8698408c2fe6","id":"97460330-726a-4bf6-b43c-8698408c2fe6"},{"name":"QA1de3522c-c580-4b93-ad7a-b2949fde64b5","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b2a6c2c-c6cc-4a53-b5d8-1a54c78ec44d/items/f4338a1f-b2c6-418e-9862-25352a880b94","id":"f4338a1f-b2c6-418e-9862-25352a880b94"},{"name":"QA907c649d-2a29-4d88-ac5f-26be60a8e5e0","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5af48137-057d-4345-92f4-863e08e23254/items/9bc4f4d3-dda7-42ea-86ef-85e9ded17e94","id":"9bc4f4d3-dda7-42ea-86ef-85e9ded17e94"},{"name":"QA907c649d-2a29-4d88-ac5f-26be60a8e5e0","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5af48137-057d-4345-92f4-863e08e23254/items/a362f2a4-1a1f-4e85-9267-e91153d58200","id":"a362f2a4-1a1f-4e85-9267-e91153d58200"},{"name":"item
+        1","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5d9fadd0-1c35-4d64-b93e-583c2a47b85d/items/9c4e0476-a1bf-4f36-95c9-8c563839fee3","id":"9c4e0476-a1bf-4f36-95c9-8c563839fee3"},{"name":"item
+        2","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5d9fadd0-1c35-4d64-b93e-583c2a47b85d/items/ed6d79f4-7738-45b6-91f9-bb855b2a29f3","id":"ed6d79f4-7738-45b6-91f9-bb855b2a29f3"},{"name":"item
+        2","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5d9fadd0-1c35-4d64-b93e-583c2a47b85d/items/f4572f1e-056f-4cd9-8a93-fb0efd309750","id":"f4572f1e-056f-4cd9-8a93-fb0efd309750"},{"name":"QAface04b7-fdc4-4cce-aa8c-ab2c58d7aa3b","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/05fbf13b-a649-4041-9067-5aa907b79f21/items/2c838ffb-0140-4a19-8955-764674f1e2cc","id":"2c838ffb-0140-4a19-8955-764674f1e2cc"},{"name":"QAface04b7-fdc4-4cce-aa8c-ab2c58d7aa3b","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/05fbf13b-a649-4041-9067-5aa907b79f21/items/39091117-4a48-47d4-9c65-ee3deb7206fd","id":"39091117-4a48-47d4-9c65-ee3deb7206fd"},{"name":"item
+        3","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5d9fadd0-1c35-4d64-b93e-583c2a47b85d/items/8968ec33-6cb8-41b1-a86a-a9dbec9015ec","id":"8968ec33-6cb8-41b1-a86a-a9dbec9015ec"},{"name":"Get
+        some milk","finished_at":"2018-01-21T18:22:30.952Z","src":"http://todoable.teachable.tech/api/lists/05d4adf2-d594-49ae-a4f7-1bc8d8a3086e/items/51deb836-9552-4f4e-81c6-45ecc61ad022","id":"51deb836-9552-4f4e-81c6-45ecc61ad022"},{"name":"item
+        1","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b68daab-13ce-42e6-b4a2-2f2172677070/items/b3733351-291a-43bd-b530-32f076562a15","id":"b3733351-291a-43bd-b530-32f076562a15"},{"name":"item
+        2","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b68daab-13ce-42e6-b4a2-2f2172677070/items/fa02456e-396f-4799-9ec8-68a460afa4ec","id":"fa02456e-396f-4799-9ec8-68a460afa4ec"},{"name":"item
+        2","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b68daab-13ce-42e6-b4a2-2f2172677070/items/2f4146d5-e459-457c-9d5d-e7783530d558","id":"2f4146d5-e459-457c-9d5d-e7783530d558"},{"name":"item
+        3","finished_at":null,"src":"http://todoable.teachable.tech/api/lists/5b68daab-13ce-42e6-b4a2-2f2172677070/items/2bb41c4c-02fb-467e-88ce-333d29174bc7","id":"2bb41c4c-02fb-467e-88ce-333d29174bc7"}]}'
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 03:21:51 GMT
+recorded_with: VCR 4.0.0
