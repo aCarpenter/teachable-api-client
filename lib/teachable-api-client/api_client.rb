@@ -12,17 +12,18 @@ module TeachableApiClient
 
     attr_accessor :username, :password, :token
 
-    def self.from_token(token)
+    def self.new_from_token(token)
       client = new
       client.token = token
       client
     end
 
-    def self.from_credentials(username, password, skip_auth = false)
+    def self.new_from_credentials(username, password, skip_auth = false)
       client = new
       client.username = username
       client.password = password
       client.authenticate unless skip_auth
+      client
     end
 
     def lists

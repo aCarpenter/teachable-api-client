@@ -8,7 +8,7 @@ RSpec::Core::RakeTask.new(:spec)
 # helper method to clean up after integration tests
 desc 'Delete everything'
 task :delete_everything, %i(token) do |_t, args|
-  client = TeachableApiClient::ApiClient.from_token(args[:token])
+  client = TeachableApiClient::ApiClient.new_from_token(args[:token])
   lists = client.lists.index
   p '/lists', lists
   lists.map do |list|

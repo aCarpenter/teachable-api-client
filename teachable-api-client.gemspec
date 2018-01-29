@@ -1,3 +1,4 @@
+require 'rake'
 Gem::Specification.new do |s|
   s.name = 'teachable-api-client'
   s.version = '0.0.2'
@@ -9,7 +10,11 @@ Gem::Specification.new do |s|
   s.metadata = { 'source_code_uri' => 'https://github.com/aCarpenter/teachable-api-client' }
   # rest-client requires ~> 2.0
   s.required_ruby_version = '~> 2.0'
-  s.files = []
+  s.files = FileList[
+    'lib/teachable-api-client/api_client.rb',
+    'lib/teachable-api-client/errors/**.rb',
+    'lib/teachable-api-client/resources/**.rb',
+  ].to_a
   s.add_runtime_dependency 'rest-client', '~> 2.0'
 
   s.add_development_dependency 'rspec', '~> 3.7'

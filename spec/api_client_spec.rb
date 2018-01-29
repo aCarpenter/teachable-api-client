@@ -4,7 +4,7 @@ require_relative '../lib/teachable-api-client/errors/record_invalid_error'
 
 describe 'API Client' do
   let(:token) { 'active-token' }
-  let(:client) { TeachableApiClient::ApiClient.from_token(token) }
+  let(:client) { TeachableApiClient::ApiClient.new_from_token(token) }
 
   context 'Creating lists' do
     it 'should create list with specified name', :vcr do
