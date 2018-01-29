@@ -75,3 +75,5 @@ If your token expires and you used your username and password to authenticate, y
 ```
 client.authenticate
 ```
+### Error-Handling
+Any operation can raise an error from the underlying [rest-client](https://github.com/rest-client/rest-client "REST Client")`rest-api` library. If the error is caused by a 422 (Unprocessable Entity) response code, the error will be an instance of `RecordInvalidError`, from which the error messages can be retrieved through `#validation_errors`.
