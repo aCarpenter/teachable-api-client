@@ -14,11 +14,12 @@ You may link to the resulting `.gem` file to use it in your projects.
 
 ## Adding teachable-api-client as a dependency
 ### Using Bundler
-Add the following entry to your `Gemfile`, adjusting the `path` to match the location of your gem file:
+Add the following entry to your `Gemfile`
 ```
-gem 'teachable-api-client', path: '/path/to/teachable-api-client-1.0.0.gem'
+gem 'teachable-api-client', git: 'https://github.com/aCarpenter/teachable-api-client.git'
 ```
 ### Without Bundler
+Require `api_client.rb`, adjusting the path to match the location of your gem file:
 ```
 require 'path/to/teachable-api-client/lib/teachable-api-client/api_client'
 ```
